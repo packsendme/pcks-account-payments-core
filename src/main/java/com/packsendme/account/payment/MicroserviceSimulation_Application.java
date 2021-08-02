@@ -1,4 +1,4 @@
-package com.packsendme.cross.payment;
+package com.packsendme.account.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

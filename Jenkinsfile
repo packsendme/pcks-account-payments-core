@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        NAME_CONTAINER = "pcks-account-payment-core"
-        NAME_IMAGE = "pcks-account-payment-img:1"
+        NAME_CONTAINER = "pcks-account-payments-core"
+        NAME_IMAGE = "pcks-account-payments-img:1"
         ID_CONTAINER = null
         PORT_CONTAINER = "9279:9279"
     }
@@ -13,7 +13,7 @@ pipeline {
         stage('Git Checkout Repositorio') {
             steps {
                 git branch: 'develop',
-                url: 'https://github.com/packsendme/pcks-account-payment-core.git'
+                url: 'https://github.com/packsendme/pcks-account-payments-core.git'
             }
         }
         stage('Java Build') {
